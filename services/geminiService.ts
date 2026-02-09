@@ -1,7 +1,7 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
 
-const getAI = () => new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
+const getAI = () => new GoogleGenAI({ apiKey: process.env.gemini_API_KEY || "" });
 
 export const generateSectionContent = async (
   sectionName: string,
